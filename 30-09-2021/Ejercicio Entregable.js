@@ -24,9 +24,15 @@ sumaReduceArray();
 
 function sieteBoom(){
 
-    let sieteArray = [1,2,3,46,53454,6123,8,99999999];
+    let sieteArray = [1,2,3,46,53457774,6123,8,99999999];
+    
+    console.log(sieteArray);
 
-    sieteArray.filter(sieteArray => sieteArray == 7 console.log("BOOM"));
+    let textosiete = sieteArray.join();
+
+    console.log(textosiete);
+
+    textosiete.includes('7') ? console.log("BOOOM!!!") : console.log("NO BOOM");
 
 }
 
