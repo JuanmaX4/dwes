@@ -37,3 +37,18 @@ function sieteBoom(){
 }
 
 sieteBoom();
+
+
+function parImpar(){
+
+    let num = 43;
+	var array = num.toString().split('');
+
+    console.log(array);
+
+	var sumaArray = array.reduce((a, b) => parseInt(a) + parseInt(b));
+	
+    sumaArray%2==0 ? console.log("Par") : console.log("Impar");
+}
+
+parImpar();
