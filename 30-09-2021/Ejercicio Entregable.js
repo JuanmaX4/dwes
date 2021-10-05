@@ -1,4 +1,4 @@
-function menosde18(){
+/*function menosde18(){
 
     let nums = [1,2,3,4,5,9999999,999,66,7,8,9,20];
 
@@ -52,3 +52,23 @@ function parImpar(){
 }
 
 parImpar();
+*/
+
+
+function danceConvert(pin) {
+    const MOVES = ["Shimmy", "Shake", "Pirouette", "Slide", "Box Step", "Headspin", "Dosado", "Pop", "Lock", "Arabesque"];
+
+		const result = [...pin].map((digit, i) =>{
+			console.log(MOVES[parseInt(digit, 10)+i]);
+            //! necesito poner un reseteo del array
+			return MOVES[parseInt(digit, 10)+i];
+		});
+    return result;
+}
+
+ 
+danceConvert()
+
+
+
+
