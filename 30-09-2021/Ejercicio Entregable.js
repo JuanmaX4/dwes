@@ -1,4 +1,4 @@
-/*function menosde18(){
+function menosde18(){
 
     let nums = [1,2,3,4,5,9999999,999,66,7,8,9,20];
 
@@ -52,7 +52,7 @@ function parImpar(){
 }
 
 parImpar();
-*/
+
 
 
 function danceConvert(pin) {
