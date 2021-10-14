@@ -6,7 +6,7 @@ const prompt = require('prompt-sync')();
 //Creamos el fichero
 fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
     if (err) throw err;
-    console.log('Saved!');
+    console.log('Guardado al crearlo!');
 });
 
 //agregamos al fichero algunas lineas de texto 
@@ -16,7 +16,7 @@ texto = prompt();
 
 fs.writeFile('mynewfile1.txt', texto, function (err) {
     if (err) throw err;
-        console.log('Guardado!');
+        console.log('Guardado al escribirlo!');
     });
 
 

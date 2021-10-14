@@ -28,7 +28,7 @@ var opcion=4;
     if (opcion==1) {    
         fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
             if (err) throw err;
-            console.log('Guardado con exito!!!');
+            console.log('Guardado con exito al crearlo!!!');
           });
     }
     if(opcion==2){
@@ -36,7 +36,7 @@ var opcion=4;
         texto = prompt();
         fs.writeFile('mynewfile1.txt', texto, function (err) {
             if (err) throw err;
-            console.log('Guardado con exito!!!');
+            console.log('Guardado con exito el modificarlo!!!');
           });
     }
     if(opcion==3){
