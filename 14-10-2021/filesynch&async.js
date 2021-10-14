@@ -26,7 +26,7 @@ fs.readFile('mynewfile1.txt', function (err, data) {
        return console.error(err);
     }
     console.log("Lectura asincrona: " + data.toString());
-    //? forma de controlar los errores median el try catch return data;
+    //? forma de controlar los errores median el try catch ==> return data;
  });
  
  // Lectura sincrona
