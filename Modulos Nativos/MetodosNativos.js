@@ -26,7 +26,7 @@ var opcion=4;
     var fs = require('fs');
 
     if (opcion==1) {    
-        fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
+        fs.appendFile('mynewfile1.note', 'Hello content!', function (err) {
             if (err) throw err;
             console.log('Guardado con exito al crearlo!!!');
           });
@@ -34,7 +34,7 @@ var opcion=4;
     if(opcion==2){
         console.log('Escribe texto');
         texto = prompt();
-        fs.writeFile('mynewfile1.txt', texto, function (err) {
+        fs.writeFile('mynewfile1.note', texto, function (err) {
             if (err) throw err;
             console.log('Guardado con exito el modificarlo!!!');
           });
