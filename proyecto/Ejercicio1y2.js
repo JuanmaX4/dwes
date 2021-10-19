@@ -1,3 +1,5 @@
+const chalk = require('chalk');
+const faker = require('faker');
 /**
 1. Iniciarlizar un proyecto NPM, instalar y ejecutar cualquier módulo NPM.
 2. Crear un programa que imprima un nombre aleatorio en un color aleatorio.
