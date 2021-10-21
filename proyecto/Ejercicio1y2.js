@@ -29,4 +29,8 @@ reloj = setInterval(() => {
     let dateTime= DateTime.now();
     if(dateTime.second==0 || dateTime.second%10==0)
         console.log((dateTime.toFormat('dd-MM-yyyy ')+chalk.green(dateTime.toFormat('HH:mm:ss'))));
+    else{
+        console.log((dateTime.toFormat('dd-MM-yyyy HH:mm:ss')));
+    }
 },1000);
+
