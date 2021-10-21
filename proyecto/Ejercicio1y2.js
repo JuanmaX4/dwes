@@ -23,7 +23,8 @@ alice cada segundo.
 • Modificación: Cada vez que los segundos se pongan a 0 o múltiplo de 10, se pondrá en verde el
 tiempo (día excluido). */
 
-var DateTime;
+let date;
+date = new Date(); // Get the current date
+console.log(date);
 
-DateTime.now().setZone("America/New_York").minus({ weeks: 1 }).endOf("day").toISO();
 
