@@ -6,6 +6,7 @@
 
 const chalk = require('chalk');
 const faker = require('faker');
+const { DateTime } = require("luxon");
 
 var nombreAleatorio = faker.name.findName();
 
@@ -23,11 +24,9 @@ alice cada segundo.
 • Modificación: Cada vez que los segundos se pongan a 0 o múltiplo de 10, se pondrá en verde el
 tiempo (día excluido). */
 
-let date;
-date = new Date(); // Get the current date
-console.log(date);
-newDate = new Date(1223727718982)
 
-
-
-//DateTime.fromMillis(1542674993410);
+reloj = setInterval(() => {
+    let dateTime= DateTime.now();
+    if(dateTime.second==0 || dateTime.second%10==0)
+        console.log((dateTime.toFormat('dd-MM-yyyy ')+chalk.green(dateTime.toFormat('HH:mm:ss'))));
+},1000);
