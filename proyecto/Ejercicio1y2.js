@@ -25,7 +25,7 @@ alice cada segundo.
 tiempo (día excluido). */
 
 
-reloj = setInterval(() => {
+reloj    = setInterval(() => {
     let dateTime= DateTime.now();
     if(dateTime.second==0 || dateTime.second%10==0)
         console.log((dateTime.toFormat('dd-MM-yyyy ')+chalk.green(dateTime.toFormat('HH:mm:ss'))));
