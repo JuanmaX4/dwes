@@ -26,5 +26,8 @@ tiempo (día excluido). */
 let date;
 date = new Date(); // Get the current date
 console.log(date);
+newDate = new Date(1223727718982)
 
 
+
+//DateTime.fromMillis(1542674993410);
