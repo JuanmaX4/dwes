@@ -11,7 +11,14 @@
     "clear": "npm run clear:test && npm run clear:locks && npm run clear:modules",
     "test": "echo \"Error: no test specified\" && exit 1",
     "date": "node Ejercicio2.js",
-    "ejercicio3": "mkdir files && cd files && mkdir files && cd files && wsl illoNoSe.js && mkdir argumento2 "
+    "crear": "mkdir files",
+    "crear:js": "wsl ./crearJS.sh",
+    "crear:carpeta": "wsl ./crearCarpeta.sh",
+    "borrar": "wsl rm -r files",
+    "borrar:js": "wsl rm -r files/*.js",
+    "imprimir:azul":"wsl ./ejercicio4.sh '\\e[34m'",
+    "imprimir:verde":"wsl ./ejercicio4.sh '\\e[32m'",
+    "imprimir:rojo":"wsl ./ejercicio4.sh '\\e[31m'"
   },
   "author": "",
   "license": "ISC"
