@@ -7,7 +7,7 @@
     "configurations": [
         {
             "type": "pwa-node",
-            "request": "launch",
+            "request": "launch",    
             "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
@@ -15,7 +15,6 @@
             "program": "${workspaceFolder}/index.js"
         },
         { // Configuración base para ejecutar el archivo abierto en el
-    
     
             "type": "node",
             "request": "launch",
