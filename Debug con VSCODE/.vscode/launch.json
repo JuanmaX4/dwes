@@ -13,22 +13,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js"
+        },
+        { // Configuración base para ejecutar el archivo abierto en el
+    
+    
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Current Opened File",
+            "outputCapture": "std",
+            "program": "${file}"
         }
     ]
 }
-
-
-/* Version ejecutar con el archivo actual abierto{
-    "version": "0.2.0",
-    "configurations": [
-    { // Configuración base para ejecutar el archivo abierto en el
-    
-    
-        "type": "node",
-        "request": "launch",
-        "name": "Launch Current Opened File",
-        "outputCapture": "std",
-        "program": "${file}"
-    }
-    ]
-}*/
