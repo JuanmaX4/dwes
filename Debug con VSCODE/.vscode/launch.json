@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    //Version de ejecutar siempre el index.js
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js"
+        }
+    ]
+}
+
+
+/* Version ejecutar con el archivo actual abierto{
+    "version": "0.2.0",
+    "configurations": [
+    { // Configuración base para ejecutar el archivo abierto en el
+    
+    
+        "type": "node",
+        "request": "launch",
+        "name": "Launch Current Opened File",
+        "outputCapture": "std",
+        "program": "${file}"
+    }
+    ]
+}*/
