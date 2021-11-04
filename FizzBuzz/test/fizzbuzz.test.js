@@ -29,3 +29,8 @@ const result = fizzBuzz(15);
 t.is(result, 'fizzbuzz');
 });
 
+test('Should return fizzbuzz', t => {
+    const result = fizzBuzz(3, `${condition}`);
+    t.is(result, 'fizzbuzz');
+});
+    
