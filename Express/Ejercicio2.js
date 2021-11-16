@@ -5,7 +5,6 @@ const winston = require("winston");
 
 const chalk = require("chalk");
 
-
 const logConfiguration = {
     transports: [
         new winston.transports.Console()
