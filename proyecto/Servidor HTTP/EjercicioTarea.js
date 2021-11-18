@@ -1,10 +1,10 @@
 const http = require('http');
 
-/* 1. Crear un servidor en NodeJS que devuelva Hello World! cuando se acceda al puerto 4000
+/* 1. Crear un servidor en NodeJS que devuelva Hello World! cuando se acceda al puerto 4000*/
 
 http.createServer((req, res) => {
  res.end('Hello World!\n');
-}).listen(4000);*/
+}).listen(4000);
 
 /* 2. Crear un servidor en NodeJS que devuelva una página web (puerto 3000) */
 
