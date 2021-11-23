@@ -27,8 +27,7 @@ app.get('/',(req, res) => {
             res.send('<html><body>Aqui hay libros</body></html>');
             break;
         case "/authors":
-            res.sendStatus(200);
-            res.send('<html><body>Aqui hay libros</body></html>');
+            res.status(500).send('Internal Server Error');
             break;
         default:
             res.sendStatus(404);
