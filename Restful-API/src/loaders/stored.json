@@ -1,0 +1,26 @@
+[
+    {
+        "id":"1",
+        "name":"Rebecca", 
+        "pass":"1234"
+    },
+    {
+        "id":"2",
+        "name":"Gabri", 
+        "pass":"0987"
+    },
+    {
+        "id":"3",
+        "name":"Antonio", 
+        "pass":"2366"
+    },
+    {
+        "id":"4",
+        "name":"Juanma", 
+        "pass":"3212"},
+    {
+        "id":"5",
+        "name":"Elena", 
+        "pass":"12342"
+    }
+]
