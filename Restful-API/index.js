@@ -11,10 +11,6 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-//rutas
-app.use(require('./src/routes/index'));
-app.use(require('./src/routes/usuario'));
-
 
 // iniciando el serve
 app.listen(app.get('port'), () => {
