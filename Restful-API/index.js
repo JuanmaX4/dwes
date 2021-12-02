@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const app = express();
 
 //settings  //por si este puerto se esta utilizando he puesto el process.env.PORT
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 app.set('json espacios', 2)
 
 //middleware

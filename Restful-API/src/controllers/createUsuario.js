@@ -1,7 +1,5 @@
 const { Router } = require('express');
 const router = Router();
-const _ =  require('underscore') //lul se puede guardar con un guion abajo
-
 const usuarios = require('../loaders/stored.json');
 console.log(usuarios);
 

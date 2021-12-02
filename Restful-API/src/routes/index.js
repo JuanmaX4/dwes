@@ -3,7 +3,7 @@ const { Router } = require('express');
 const router = Router();
 
 //rutas
-router.get('/test', (req, res) => {
+router.get('/', (req, res) => {
     const data = {
         "nombre": "Juanma",
         "website": "api.com"

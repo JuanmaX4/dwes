@@ -7,10 +7,10 @@ const { putUsuario } = require('../controllers/putUsuario');
 
 const router = Router();
 
-router.get('/',getUsuario);
-router.post('/',createUsuario);
-router.put('/',putUsuario);
-router.delete('/',deleteUsuario);
+router.get('/usuarios',getUsuario);
+router.post('/usuarios',createUsuario);
+router.put('/usuarios/:id',putUsuario);
+router.delete('/usuarios/:id',deleteUsuario);
 
 
 module.exports = router;
