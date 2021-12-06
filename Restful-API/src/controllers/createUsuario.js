@@ -3,9 +3,6 @@ const router = Router();
 const usuarios = require('../loaders/stored.json');
 console.log(usuarios);
 
-
-
-
 router.post('/usuarios', (req, res) => {
     const { id, name, pass } = req.body;
     if(id && name && pass) {

@@ -5,8 +5,6 @@ const _ =  require('underscore') //lul se puede guardar con un guion abajo
 const usuarios = require('../loaders/stored.json');
 console.log(usuarios);
 
-
-
 router.put('/usuarios:id', (req, res) =>{
     const { id } = req.params;
     const { name, pass } = req.body;

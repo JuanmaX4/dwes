@@ -1,15 +1,17 @@
-const { Router } = require('express');
-const router = Router();
+//const { Router } = require('express');
+// const router = Router();
 
 const usuarios = require('../loaders/stored.json');
-console.log(usuarios);
 
 
 //Mostrar todos los usuarios
 
-router.get('/usuarios', (req, res) => {
-    res.json(usuarios);
-})
+// router.get('/usuarios', (req, res) => { res.status(200).json(usuarios); });
 
-module.exports = router;
+function getUsuarios(req, res) {
+    res.status(200).json(usuarios);
+    console.log(usuarios);
+}
+
+module.exports = {getUsuarios};
 
