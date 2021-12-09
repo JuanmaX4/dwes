@@ -1,8 +1,9 @@
-const users = require('../data/users');
+const data = require('../data/users');
 
 function users(req, res, next) {
-    const filters = req.query;
+    const { limit = 5, offset = 0, ...filters } = req.query;
     const filteredUsers = data.filter(user => {
+
         let isValid = true;
         for (key in filters) {
             console.log(key, user[key], filters[key]);
@@ -10,7 +11,9 @@ function users(req, res, next) {
         }
         return isValid;
     });
-    res.send(filteredUsers);
+
+    const paginacion = filteredUsers.slice(parseInt(offset), parseInt(offset) + parseInt(limit));
+    return res.send(paginacion);
 }
 module.exports = {
     users
