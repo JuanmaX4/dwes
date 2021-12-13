@@ -9,7 +9,6 @@ app.get("/public", (req , res) => {
     });
 });
 
-
     //primero en el postman tienes que hacer una peticion post para que se genere el token para
 
 app.post("/api/login", (req , res) => {
