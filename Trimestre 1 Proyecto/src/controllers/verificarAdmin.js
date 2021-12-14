@@ -11,10 +11,10 @@ function getCarpetita() {
 
 const guardar = getCarpetita();
 
-const todaslasNotas =  guardar.map(guarda => {
-    const contenido = fs.readFileSync(`${dameLasnotasYa}/${carpetita}/${guarda}`, 'utf-8');
+/*const todaslasNotas =  guardar.map(guarda => {
+    const contenido = fs.readFile(`${dameLasnotasYa}/${carpetita}/${guarda}`, 'utf-8');
     return { nombre: guarda, contenido:  contenido };
-});
+});*/
 
 
 // Authorization: Bearer <token>
@@ -36,7 +36,7 @@ async function verificar(req, res, next){
                     authData
             });*/
 
-            res.status(200).send(todaslasNotas);
+            res.status(200).send(getCarpetita());
         }
     });
 }
