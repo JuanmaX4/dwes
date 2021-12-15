@@ -1,3 +1,4 @@
+const { send } = require("express/lib/response");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const {dameLasnotasYa} = require("../ayuda");
@@ -36,6 +37,8 @@ async function verificar(req, res, next){
         }
     });
 }
+
+
 
 module.exports = { verificar, todaslasNotas}
 

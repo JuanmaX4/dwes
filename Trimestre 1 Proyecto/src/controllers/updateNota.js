@@ -1,7 +1,7 @@
 const fs = require('fs');
 const {dameLasnotasYa} = require("../ayuda");
 const carpetita = 'data';
-const {todaslasNotas, verificar} = require("./verificarAdmin");
+const {todaslasNotas} = require("./verificarAdmin");
 
 
 async function updateNota(req, res, verificar) {
@@ -13,8 +13,8 @@ async function updateNota(req, res, verificar) {
     
     for (let i = 0; i <= todaslasNotas.length; i++) {
         if(i == id){
-            console.log(todaslasNotas);
             fs.writeFileSync(`${dameLasnotasYa}/${carpetita}/${todaslasNotas[i].nombre}`, `${contenido.message}`);        
+            console.log(todaslasNotas);
         }
     }
 }

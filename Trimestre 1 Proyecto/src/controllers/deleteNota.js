@@ -12,6 +12,7 @@ async function deleteNota(req, res) {
         if(i == id){
             console.log(todaslasNotas);
             fs.unlinkSync(`${dameLasnotasYa}/${carpetita}/${todaslasNotas[i].nombre}`);
+            console.log(todaslasNotas);
         }
     }
 }
