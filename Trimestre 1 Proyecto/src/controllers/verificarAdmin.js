@@ -1,21 +1,18 @@
-const { send } = require("express/lib/response");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const {dameLasnotasYa} = require("../ayuda");
 const carpetita = 'data';
 
 function getCarpetita() {
-    let archivo =  fs.readdirSync(`${dameLasnotasYa}/${carpetita}`);
-    return archivo;
+    return  fs.readdirSync(`${dameLasnotasYa}/${carpetita}`);
 }
 
 const guardar = getCarpetita();
 
-/*const todaslasNotas =  guardar.map(guarda => {
-    const contenido = fs.readFile(`${dameLasnotasYa}/${carpetita}/${guarda}`, 'utf-8');
+const todaslasNotas =  guardar.map(guarda => {
+    const contenido = fs.readFileSync(`${dameLasnotasYa}/${carpetita}/${guarda}`, 'utf-8');
     return { nombre: guarda, contenido:  contenido };
-});*/
-
+});
 
 // Authorization: Bearer <token>
 async function verificar(req, res, next){
@@ -35,13 +32,12 @@ async function verificar(req, res, next){
                     mensaje: "bienvenido usuario vip",
                     authData
             });*/
-
-            res.status(200).send(getCarpetita());
+            res.status(200).send(todaslasNotas);
         }
     });
 }
 
 
 
-module.exports = { verificar}
+module.exports = { verificar, todaslasNotas}
 
