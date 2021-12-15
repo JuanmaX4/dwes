@@ -18,7 +18,7 @@ const guardar = getCarpetita();
 
 
 // Authorization: Bearer <token>
-async function verificar(req, res, next){
+async function admin(req, res, next){
     const bearerHeader =  await req.headers['authorization'];
 
     if(typeof bearerHeader !== 'undefined'){
@@ -31,11 +31,6 @@ async function verificar(req, res, next){
         if(error){
             res.sendStatus(403);
         }else{
-            /*res.json({
-                    mensaje: "bienvenido usuario vip",
-                    authData
-            });*/
-
             res.status(200).send(getCarpetita());
         }
     });
@@ -43,5 +38,5 @@ async function verificar(req, res, next){
 
 
 
-module.exports = { verificar}
+module.exports = { admin }
 

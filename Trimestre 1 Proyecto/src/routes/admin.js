@@ -1,9 +1,9 @@
 const { Router } = require('express');
 
-const { notas } = require('../controllers/notas');
+const { admin } = require('../controllers/verificarAdmin');
 
 const router = Router();
 
-router.post('/',notas);
+router.post('/',admin);
 
 module.exports = router;
