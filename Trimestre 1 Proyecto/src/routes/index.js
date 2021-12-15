@@ -16,6 +16,8 @@ router2.use('/login', token);
 
 router2.use('/verificar', contra);
 
+router2.use('/admin', contra);
+
 router2.use('/crear', contra);
 
 router2.post('/notas/:nombre',createNota);

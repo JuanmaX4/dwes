@@ -37,7 +37,5 @@ async function verificar(req, res, next){
     });
 }
 
-
-
 module.exports = { verificar, todaslasNotas}
 
