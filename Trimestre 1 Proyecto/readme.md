@@ -1,26 +1,26 @@
-# Investigación y comparativa de REST vs OData vs GraphQL
+# Investigación y comparativa de REST vs OData vs GraphQL 📚
 
 
-## REST 
+## REST 💤
 
 Las `API REST` aprovechan los métodos `HTTP`, desde un simple `POST` o `GET` hasta métodos personalizados, sin embargo, nosotros veremos únicamente `POST`, `GET`, `PUT` y `DELETE` en su forma más sencilla y las Headers que son para autenticación, decirle qué tipo de dato va, etc. Pero esto no lo veremos aquí.
 Asimismo, utilizaremos a Express para ser nuestro servidor `HTTP`, una recomendación es que, las `API REST` siempre estén detrás de Nginx ya que en caso de falla, Nginx puede seguir respondiendo, además que, permite una mejor manipulación de datos, protección de enlaces y demás cosas pero tampoco veremos esto en este tutorial, solo quise mencionarlo.
 ___
 
-## OData 
+## OData 📟
 El Protocolo de Datos Abierto `OData` o `Open Data Protocoles` un protocolo abierto que permite la creación y consumo de `APIs RESTful` que pueden ser consultadas e interoperables en una manera simple y estandarizada. `Microsoft` inicio dicho protocolo en el 2007. Las versiones 1.0,2.0 y 3 están lanzadas bajo el `Microsoft Open Specification Promise`. La versión 4.0 fue estandarizada en `OASIS` con un lanzamiento en marzo de 2014. En abril de 2015 `OASIS` envió la versión 4 de `OData` y la versión 4 del formato `OData JSON` a `ISO/IEC JTC 1` para su aprobación como un estándar internacional.
 
 El protocolo permite la creación y consumición de `APIs REST` que permiten la creación de clientes Web para publicar y editar recursos, identificados utilizandos `URLs` y definido en un modelo de datos, usando mensajes `HTTP` simples. `OData` comparte algunas similitudes con `JDBC` y con `ODBC`; como `ODBC`, `OData` no esta limitada a una Base de datos relacional.
 
 ___
-## GraphQL
+## GraphQL 📊
 `GraphQL` es un lenguaje de consulta y un tiempo de ejecución del servidor para las interfaces de programación de aplicaciones `API`; su función es brindar a los clientes exactamente los datos que solicitan y nada más.
 
 Gracias a `GraphQL`, las `API` son rápidas, flexibles y sencillas para los desarrolladores. Incluso se puede implementar en un entorno de desarrollo integrado `IDE` conocido como `GraphiQL`. Como alternativa a `REST`, `GraphQL` permite que los desarrolladores creen consultas para extraer datos de varias fuentes en una sola llamada a la `API`.
 
 Además, `GraphQL` otorga a los encargados del mantenimiento de las `API` la flexibilidad para agregar campos o modificarlos, sin que esto afecte las consultas actuales. Los desarrolladores pueden diseñar estas interfaces con los métodos que prefieran, y la especificación de `GraphQL` garantizará que funcionen de forma predecible para los clientes.
 
-### ¿Entonces cual es su diferencia?
+### ¿Entonces cual es su diferencia❓
 ___
 ~~~
 La diferencia principal y más importante es que [GraphQL] no está tratando con recursos dedicados. Es más, todos los recursos se consideran más bien en su totalidad un conjunto de grafos conectados entre sí. Esto da lugar a que puedes adaptar tu consulta a las necesidades del cliente utilizando el lenguaje de consulta de [GraphQL] (basado en Schemas) describiendo lo que le gustaría tener como respuesta, así como combinar diferentes entidades (o tipos) en una consulta y qué atributos deben incluirse en la respuesta de cada nivel.
