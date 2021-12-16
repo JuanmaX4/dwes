@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const {dameLasnotasYa} = require("../ayuda");
 const carpetita = 'data';
