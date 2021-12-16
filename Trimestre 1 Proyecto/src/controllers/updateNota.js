@@ -5,7 +5,7 @@ const {todaslasNotas} = require("./verificarAdmin");
 
 
 async function updateNota(req, res, verificar) {
-    const nombre = req.params.nombre;
+    //const nombre = req.params.nombre;
     const contenido = req.body;
     const id = req.params.id;
 
