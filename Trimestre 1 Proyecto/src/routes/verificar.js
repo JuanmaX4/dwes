@@ -1,6 +1,6 @@
 const { Router } = require('express');
 
-const { verificar } = require('../controllers/verificarLogin');
+const { verificar } = require('../controllers/verificarAdmin');
 
 const router = Router();
 

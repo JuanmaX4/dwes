@@ -5,20 +5,18 @@ const {dameLasnotasYa} = require("../ayuda");
 const carpetita = 'data';
 
 function getCarpetita() {
-    let archivo =  fs.readdirSync(`${dameLasnotasYa}/${carpetita}`);
-    return archivo;
+    return  fs.readdirSync(`${dameLasnotasYa}/${carpetita}`);
 }
 
 const guardar = getCarpetita();
 
-/*const todaslasNotas =  guardar.map(guarda => {
-    const contenido = fs.readFile(`${dameLasnotasYa}/${carpetita}/${guarda}`, 'utf-8');
+const todaslasNotas =  guardar.map(guarda => {
+    const contenido = fs.readFileSync(`${dameLasnotasYa}/${carpetita}/${guarda}`, 'utf-8');
     return { nombre: guarda, contenido:  contenido };
-});*/
-
+});
 
 // Authorization: Bearer <token>
-async function admin(req, res, next){
+async function verificar(req, res, next){
     const bearerHeader =  await req.headers['authorization'];
 
     if(typeof bearerHeader !== 'undefined'){
@@ -31,12 +29,15 @@ async function admin(req, res, next){
         if(error){
             res.sendStatus(403);
         }else{
-            res.status(200).send(getCarpetita());
+            /*res.json({
+                    mensaje: "bienvenido usuario vip",
+                    authData
+            });*/
+            res.status(200).send(todaslasNotas);
         }
     });
 }
 
 
 
-module.exports = { admin }
-
+module.exports = { verificar, todaslasNotas}

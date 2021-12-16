@@ -6,7 +6,7 @@ function getToken(req, res) {
             nombre : "usuario",
             email: "usuario@email.com"
         }
-        jwt.sign({user}, 'secretkey', {expiresIn: '32s'}, (err, token) => {
+        jwt.sign({user}, 'usuario', {expiresIn: '32s'}, (err, token) => {
             res.json({
                 token
             });
