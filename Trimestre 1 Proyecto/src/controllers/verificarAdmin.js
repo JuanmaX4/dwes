@@ -1,4 +1,3 @@
-const { send } = require("express/lib/response");
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const {dameLasnotasYa} = require("../ayuda");
