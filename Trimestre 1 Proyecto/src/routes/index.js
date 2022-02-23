@@ -13,7 +13,7 @@ const deleteNota = require('./deleteNota');
 const router2 = Router();
 
 router2.use('/login', token);
-
+    
 router2.use('/verificar', contra);
 
 router2.use('/admin', contra);
